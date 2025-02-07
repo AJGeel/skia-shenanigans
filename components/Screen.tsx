@@ -6,6 +6,7 @@ type ScreenProps = {
   children: React.ReactNode;
   title: string;
   containerStyle?: StyleProp<ViewStyle>;
+  isScrollable?: true;
 };
 
 export const Screen = ({ children, title, containerStyle }: ScreenProps) => (
