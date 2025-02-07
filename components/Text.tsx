@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
   text: {
     fontFamily: "Funnel",
     color: colors.black,
+    lineHeight: 14 * 1.5,
   },
 });
 
