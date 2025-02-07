@@ -1,11 +1,13 @@
+import { Screen } from "@/components/Screen";
+import { Text } from "react-native";
 import { Link } from "expo-router";
-import { Pressable, Text, View } from "react-native";
 
-export default function Home() {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Home Screen</Text>
-      <Link href="/modal">Open modal</Link>
-    </View>
-  );
-}
+const Index = () => (
+  <Screen title="Home screen">
+    <Text>You are on the Home Screen</Text>
+
+    <Link href="/(skia)/sample">Go to the sample canvas</Link>
+  </Screen>
+);
+
+export default Index;
