@@ -1,5 +1,5 @@
 import { Screen } from "@/components/Screen";
-import { Text, View } from "react-native";
+import Text from "@/components/Text";
 
 const Sample = () => (
   <Screen title="Sample Canvas">

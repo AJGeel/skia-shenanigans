@@ -5,7 +5,9 @@ import * as SplashScreen from "expo-splash-screen";
 
 export const useSplashScreen = () => {
   const [isLoaded, error] = useFonts({
-    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
+    Funnel: require("../assets/fonts/FunnelDisplay-Regular.ttf"),
+    FunnelBold: require("../assets/fonts/FunnelDisplay-Bold.ttf"),
+
     ...FontAwesome.font,
   });
 

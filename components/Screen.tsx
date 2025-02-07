@@ -15,5 +15,10 @@ export const Screen = ({ children, title, containerStyle }: ScreenProps) => (
 );
 
 const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: "center", justifyContent: "center" },
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#fefae0",
+  },
 });

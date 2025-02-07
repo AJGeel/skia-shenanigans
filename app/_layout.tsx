@@ -18,7 +18,17 @@ const RootLayout = () => {
     return null;
   }
 
-  return <Stack screenOptions={{ headerShown: true }}></Stack>;
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: true,
+        headerTintColor: "black",
+        headerTitleStyle: { fontFamily: "FunnelBold" },
+        headerBackButtonDisplayMode: "minimal",
+        headerStyle: { backgroundColor: "#fefae0" },
+      }}
+    />
+  );
 };
 
 export default RootLayout;
