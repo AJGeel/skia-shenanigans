@@ -26,7 +26,8 @@ const RootLayout = () => {
         headerTintColor: colors.black,
         headerTitleStyle: { fontFamily: "FunnelBold" },
         headerBackButtonDisplayMode: "minimal",
-        headerStyle: { backgroundColor: colors.white },
+        headerTransparent: true,
+        contentStyle: { backgroundColor: colors.white },
       }}
     />
   );

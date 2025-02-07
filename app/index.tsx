@@ -1,16 +1,22 @@
 import Button from "@/components/Button";
-import { Screen } from "@/components/Screen";
+import { ScrollableScreen } from "@/components/Screen";
 import Text from "@/components/Text";
 import { Link } from "expo-router";
 import { StyleSheet } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+
+const links = [
+  { title: "1. Canvas with Blending Modes", href: "/(skia)/hello-world" },
+] as const;
 
 const Index = () => {
-  const links = [
-    { title: "1. Canvas with Blending Modes", href: "/(skia)/hello-world" },
-  ] as const;
+  const insets = useSafeAreaInsets();
 
   return (
-    <Screen title="Skia Shenanigans" containerStyle={styles.container}>
+    <ScrollableScreen
+      title="Skia Shenanigans"
+      containerStyle={[styles.container, { paddingTop: insets.top + 12 }]}
+    >
       <Text>
         This is a React Native app to explore the Skia Graphics Library. In
         here, you'll find a collection of experiments and prototypes.
@@ -21,7 +27,7 @@ const Index = () => {
           <Button title={title} />
         </Link>
       ))}
-    </Screen>
+    </ScrollableScreen>
   );
 };
 
