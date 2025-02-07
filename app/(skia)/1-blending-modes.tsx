@@ -26,7 +26,7 @@ const OPACITY_SPRING_CONFIG = {
   stiffness: 1000,
 };
 
-const HelloWorld = () => {
+const Route = () => {
   const { colors } = useColorScheme(ANIMATION_TIMING);
 
   const padding = 60;
@@ -57,7 +57,7 @@ const HelloWorld = () => {
   }, []);
 
   return (
-    <Screen title="Canvas with Blending Modes">
+    <Screen title="Circles and Blending Modes">
       <Canvas style={{ width: size, height: size }}>
         <Group blendMode="multiply" opacity={opacity}>
           <Circle cx={radius} cy={radius} r={radius} color={colors[0]} />
@@ -69,4 +69,4 @@ const HelloWorld = () => {
   );
 };
 
-export default HelloWorld;
+export default Route;
