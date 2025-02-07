@@ -1,4 +1,5 @@
 import { useSplashScreen } from "@/hooks/useSplashScreen";
+import { colors } from "@/theme/colors";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import "react-native-reanimated";
@@ -22,10 +23,10 @@ const RootLayout = () => {
     <Stack
       screenOptions={{
         headerShown: true,
-        headerTintColor: "black",
+        headerTintColor: colors.black,
         headerTitleStyle: { fontFamily: "FunnelBold" },
         headerBackButtonDisplayMode: "minimal",
-        headerStyle: { backgroundColor: "#fefae0" },
+        headerStyle: { backgroundColor: colors.white },
       }}
     />
   );

@@ -1,3 +1,4 @@
+import { colors } from "@/theme/colors";
 import {
   Text as DefaultText,
   StyleProp,
@@ -17,6 +18,7 @@ const Text = ({ children, style }: TextProps) => (
 const styles = StyleSheet.create({
   text: {
     fontFamily: "Funnel",
+    color: colors.black,
   },
 });
 

@@ -1,3 +1,4 @@
+import { colors } from "@/theme/colors";
 import { Stack } from "expo-router";
 import { View, StyleSheet, StyleProp, ViewStyle } from "react-native";
 
@@ -19,6 +20,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#fefae0",
+    backgroundColor: colors.white,
   },
 });
