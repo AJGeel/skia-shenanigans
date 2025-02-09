@@ -6,7 +6,8 @@ import { StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const links = [
-  { title: "1. Canvas with Blending Modes", href: "/(skia)/hello-world" },
+  { title: "1. Circles and Blending Modes", href: "/(skia)/1-blending-modes" },
+  { title: "2. Atlas Instances", href: "/(skia)/2-atlas" },
 ] as const;
 
 const Index = () => {
@@ -17,7 +18,7 @@ const Index = () => {
       title="Skia Shenanigans"
       containerStyle={[styles.container, { paddingTop: insets.top + 12 }]}
     >
-      <Text>
+      <Text style={{ paddingBottom: 12 }}>
         This is a React Native app to explore the Skia Graphics Library. In
         here, you'll find a collection of experiments and prototypes.
       </Text>

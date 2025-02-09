@@ -20,7 +20,7 @@ const Button = forwardRef<View, ButtonProps>(({ title, ...props }, ref) => {
       {...props}
       {...onPressHandlers}
       ref={ref}
-      style={[animatedStyle, styles.container]}
+      style={[animatedStyle, styles.container, props.style]}
     >
       <Text style={styles.title}>{title}</Text>
       <AntDesign name="right" size={16} color={white} />
