@@ -8,6 +8,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 const links = [
   { title: "1. Circles and Blending Modes", href: "/(skia)/1-blending-modes" },
   { title: "2. Atlas Instances", href: "/(skia)/2-atlas" },
+  { title: "3. Remote Image", href: "/(skia)/3-remote-image" },
 ] as const;
 
 const Index = () => {
