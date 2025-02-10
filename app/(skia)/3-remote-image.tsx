@@ -1,5 +1,6 @@
 import { Screen } from "@/components/Screen";
 import { useFullscreenCanvas } from "@/hooks/useFullscreenCanvas";
+import { useWithInterval } from "@/hooks/useWithInterval";
 import {
   Canvas,
   Group,
@@ -8,7 +9,7 @@ import {
   Turbulence,
   DisplacementMap,
 } from "@shopify/react-native-skia";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ActivityIndicator } from "react-native";
 
 const Route = () => {
@@ -18,13 +19,7 @@ const Route = () => {
 
   const [seed, setSeed] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSeed((prevSeed) => prevSeed + 1);
-    }, 75);
-
-    return () => clearInterval(interval);
-  });
+  useWithInterval({ callback: () => setSeed((prevSeed) => prevSeed + 1) });
 
   return (
     <Screen title="Remote Image">

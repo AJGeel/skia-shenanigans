@@ -9,6 +9,7 @@ const links = [
   { title: "1. Circles and Blending Modes", href: "/(skia)/1-blending-modes" },
   { title: "2. Atlas Instances", href: "/(skia)/2-atlas" },
   { title: "3. Remote Image", href: "/(skia)/3-remote-image" },
+  { title: "4. SVG Path Effects", href: "/(skia)/4-svg-path-effects" },
 ] as const;
 
 const Index = () => {
